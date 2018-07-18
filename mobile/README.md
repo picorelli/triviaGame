@@ -44,3 +44,8 @@ After this step, the Expo Client will open and it’ll automatically load and co
  - Selection of category and difficulty of the game;
  - Sounds for all actions (buttons, navigation);
  - Store entire score history;
+
+ ## Resources
+
+ - All images have been downloaded in https://www.flaticon.com
+ - All songs have been download in https://audiojungle.net
