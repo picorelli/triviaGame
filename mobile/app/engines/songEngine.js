@@ -1,16 +1,12 @@
 import Expo from 'expo'
-import themeSong from '../assets/sounds/theme.mp3'
+import correctAnwserSong from '../assets/sounds/correctAnwser.mp3'
 
 import logErrorService from './errorEngine'
 
-export const THEME_SONG = 'themeSong'
 export const CORRECT_ANWSER_SONG = 'correctAnwserSong'
-export const WRONG_ANWSER_SONG = 'correctAnwserSong'
 
 export const appSongs = {
-  [THEME_SONG]: themeSong,
-  [CORRECT_ANWSER_SONG]: themeSong,
-  [WRONG_ANWSER_SONG]: themeSong,
+  [CORRECT_ANWSER_SONG]: correctAnwserSong,
 }
 
 const expoAudio = new Expo.Audio.Sound()
