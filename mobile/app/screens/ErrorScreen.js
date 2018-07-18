@@ -17,7 +17,7 @@ const ErrorScreen = () => (
         resizeMode="contain"
       />
       <Text style={styles.textContainer}>
-        Ooh, Sorry! Something happens!
+        Ooh, something went wrong!
       </Text>
       <View style={styles.bottomContainer}>
         <PrimaryButton
