@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "borderRadius": 8,
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "center",
+      "padding": 30,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 16,
+        "textAlign": "center",
+      }
+    }
+  >
+    Which &quot;Toy Story&quot; character was voiced by Don Rickles?
+  </Text>
+</View>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Image
+  collapsable={undefined}
+  resizeMode="contain"
+  source={1}
+  style={
+    Object {
+      "height": "30%",
+      "transform": Array [
+        Object {
+          "rotate": "0deg",
+        },
+      ],
+      "width": "30%",
+    }
+  }
+/>
+`;
