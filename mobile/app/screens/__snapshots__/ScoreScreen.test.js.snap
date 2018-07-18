@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F95E42",
+      "backgroundColor": "rgba(213, 55, 43, 1)",
       "height": "100%",
       "padding": 20,
       "width": "100%",
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "color": "#fff",
+          "color": "rgba(255, 255, 255, 1)",
           "fontSize": 28,
           "fontWeight": "700",
         }

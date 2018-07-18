@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "#fff",
+      "backgroundColor": "rgba(255, 255, 255, 1)",
       "borderRadius": 8,
       "flex": 1,
       "flexDirection": "column",
