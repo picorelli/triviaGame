@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    collapsable={undefined}
+    resizeMode="contain"
+    source={1}
+    style={
+      Object {
+        "height": "30%",
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
+        "width": "30%",
+      }
+    }
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "rgba(255, 255, 255, 1)",
+        "fontSize": 28,
+        "fontWeight": "700",
+      }
+    }
+  >
+    Loading..
+  </Text>
+</View>
+`;
