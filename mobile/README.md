@@ -41,9 +41,10 @@ After this step, the Expo Client will open and it’ll automatically load and co
 > I know the iOS instruction is a bit more complicated, but unfortunately due to constant changes in Apple's guidelines and review rules, the Expo team decided to remove the QR Code functionality.
 
 ## Future improvements
- - Selection of category and difficulty of the game;
- - Sounds for all actions (buttons, navigation);
- - Store entire score history;
+ - Selection of category and difficulty of the game
+ - Sounds for all actions (buttons, navigation)
+ - Store entire score history
+ - Catch all exceptions and send to a reporting service (Rollbar, Sentry.io or Bugsnag)
 
  ## Resources
 
