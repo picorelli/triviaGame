@@ -123,7 +123,7 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        Mr. Potato Head
+        Rex
       </Text>
     </View>
     <View
@@ -174,7 +174,7 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        Slinky Dog
+        Mr. Potato Head
       </Text>
     </View>
     <View
@@ -276,7 +276,7 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        Rex
+        Slinky Dog
       </Text>
     </View>
   </View>

@@ -1,5 +1,5 @@
 import he from 'he'
-import { shuffleArray } from '../utils'
+import _ from 'lodash'
 
 export const EASY_SCORE = 'easy'
 export const MEDIUM_SCORE = 'medium'
@@ -51,14 +51,14 @@ export const normalizeQuestion = (questionData) => {
 }
 
 export const prepareQuestion = (questionData) => {
-  const {
-    options,
-  } = questionData
+  let newQuestionData = questionData
 
-  const newQuestionData = normalizeQuestion(questionData)
+  if (questionData) {
+    newQuestionData = normalizeQuestion(questionData)
+  }
 
-  if (options) {
-    newQuestionData.options = shuffleArray(options)
+  if (questionData.options) {
+    newQuestionData.options = _.shuffle(newQuestionData.options)
   }
 
   return newQuestionData

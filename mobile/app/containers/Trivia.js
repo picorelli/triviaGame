@@ -20,6 +20,7 @@ class Trivia extends Component {
       questions: [],
       question: {},
       score: 0,
+      disableOptions: false,
     }
   }
 
@@ -58,6 +59,7 @@ class Trivia extends Component {
       this.setState({
         questionNumber: nextQuestionNumber,
         question: newQuestion,
+        disableOptions: false,
       })
     } else {
       onFinish({ score })
@@ -82,7 +84,13 @@ class Trivia extends Component {
       })
     }
 
-    this.nextQuestion()
+    this.setState({
+      disableOptions: true,
+    })
+
+    setTimeout(() => {
+      this.nextQuestion()
+    }, 1000)
   }
 
   render() {
@@ -94,6 +102,7 @@ class Trivia extends Component {
       questionNumber,
       questions,
       question,
+      disableOptions,
     } = this.state
 
     return (
@@ -109,11 +118,12 @@ class Trivia extends Component {
         </View>
         <View style={styles.optionsContainer}>
           {
-            question.options.map((item, idx) => (
+            question.options.map(item => (
               <QuestionOption
                 answer={item.answer}
                 correct={item.correct}
-                key={idx} // eslint-disable-line react/no-array-index-key
+                disabled={disableOptions}
+                key={item.answer} // eslint-disable-line react/no-array-index-key
                 onPress={this.handlePress}
               />
             ))

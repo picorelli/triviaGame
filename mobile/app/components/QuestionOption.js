@@ -16,22 +16,26 @@ class QuestionOption extends Component {
 
   handlePress = () => {
     const {
-      onPress,
       correct,
+      disabled,
+      onPress,
     } = this.props
 
-    this.setState({
-      pressed: true,
-    })
+    if (!disabled) {
+      this.setState({
+        pressed: true,
+      })
 
-    onPress({
-      correctAwnser: correct,
-    })
+      onPress({
+        correctAwnser: correct,
+      })
+    }
   }
 
   render() {
     const {
       answer,
+      disabled,
       correct,
     } = this.props
 
@@ -46,6 +50,7 @@ class QuestionOption extends Component {
           { backgroundColor: pressed && correct ? colors.quarternary : colors.secondary },
         ]}
         onPress={this.handlePress}
+        activeOpacity={disabled ? 1 : 0.2}
       >
         <Text
           style={[
@@ -62,11 +67,13 @@ class QuestionOption extends Component {
 
 QuestionOption.defaultProps = {
   correct: false,
+  disabled: false,
 }
 
 QuestionOption.propTypes = {
   answer: PropTypes.string.isRequired,
   correct: PropTypes.bool,
+  disabled: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
 }
 
