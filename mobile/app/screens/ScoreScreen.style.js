@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { alignVh, fontSize } from '../styles'
+import { alignVh, colors, fontSize } from '../styles'
 
 export default StyleSheet.create({
   viewContainer: {
@@ -12,7 +12,7 @@ export default StyleSheet.create({
     width: '30%',
   },
   textContainer: {
-    color: '#fff',
+    color: colors.secondary,
     fontSize: fontSize.md,
     fontWeight: '700',
   },

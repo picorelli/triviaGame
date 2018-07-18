@@ -1,10 +1,10 @@
 import { StyleSheet } from 'react-native'
 
-import { padding } from '../styles'
+import { colors, padding } from '../styles'
 
 export default StyleSheet.create({
   imgBackgroundContainer: {
-    backgroundColor: '#F95E42',
+    backgroundColor: colors.primary,
     height: '100%',
     width: '100%',
     padding: padding.md,
